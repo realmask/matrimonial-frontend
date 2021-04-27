@@ -52,6 +52,7 @@ form button {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-bottom: 1px solid rgba(165, 42, 42, 0.09);
     
 }
 .main-elements .rows .col-elements img{
@@ -90,7 +91,7 @@ form button {
     height: auto;
     margin: 20px auto 5px auto;
    /*  box-shadow: -8px 8px 20px  rgb(216, 143, 143) ; */
-
+    border: 1px solid rgba(165, 42, 42, 0.186);
     
 }
 .success-story .story-logo{
@@ -107,17 +108,23 @@ form button {
     font-weight: 500;
     font-family: 'Pacifico';
  /*    background-color: rgb(252, 244, 235); */
-       background-color: rgb(232, 206, 205);
+       background-color: whitesmoke;
     display:flex;
     flex-direction: column;
+  
     
     
 }
 .success-story .story-elements .stories{
-    background-color: rgb(221, 95, 95);
-    color: white;
-    font-size: small;
+   /*  background-color: rgb(221, 95, 95); */
+    /* olor: white; */
+    font-size: large;
     padding: 12px;
+    font-weight: 600;
+    display: flex;
+    margin: 0 auto 0 auto;
+    border-bottom: 2px solid brown;
+    width: fit-content;
     /* border-top-left-radius: 6px;
     border-top-right-radius: 6px; */
 }
@@ -139,7 +146,7 @@ form button {
     margin-left: auto;
     margin-right: auto;
     
-    box-shadow: 0 5px 20px  rgb(185, 223, 252) ;
+    box-shadow: 0 5px 20px  rgb(199, 189, 190) ;
     
 }
 

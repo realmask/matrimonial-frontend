@@ -17,7 +17,7 @@ function Header() {
             {loginpage ? <LoginModalPage closeHandler = {closeHandler}setLoginpage = {setLoginpage} /> : ""} 
             <div className="navbar">
                 <div className="logo">
-                    <img src="logo.png" alt="logo" />
+                    <img src="./logo.png" width="150px" height="50px" style={{padding:"10px"}} alt="logo" />
                 </div>
 
                 <div className="navbarOptions">
@@ -28,7 +28,14 @@ function Header() {
 
                 </div>
             </div>
-            <Form/>   
+            <div className="formBody">
+            <div className="formHeader">
+                    <h1>Register</h1>
+                  
+                </div>
+                <div className="formLoginSection"><p> Already a member ? <a href="#">login</a> </p></div>
+                <Form/>
+            </div>
             <section className="main" >
                   
                   <div className="bannerDesign">
