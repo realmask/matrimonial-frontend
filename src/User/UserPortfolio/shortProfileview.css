@@ -39,6 +39,25 @@
     background-color:  rgb(199, 57, 135);
     color: white;
 }
+.membershipPlan{
+    background-color:rgb(245, 232, 232) ;
+    border: 1px solid rgb(202, 223, 237);
+    border-radius:4px  ;
+     padding: 10px 20px 10px 20px; 
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.membershipPlan p{
+    font-size: medium;
+    font-weight: 500;
+}
+.membershipPlan button{
+    padding: 3px 6px 3px 6px;
+}
 .Profile_Picture{
   display: flex;
   justify-content: space-evenly;

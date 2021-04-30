@@ -1,6 +1,6 @@
 import React from 'react'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import { Avatar, Link ,Badge } from '@material-ui/core'
+import { Avatar, Link, Badge } from '@material-ui/core'
 import './UserBodyContent.css'
 
 const members_info = [{
@@ -40,65 +40,65 @@ function BodyContent() {
         <div className="content_body">
             {members_info.map(data => {
                 return (
-                   
-                   <div className="Member_Profile">
-                    <div className="Member">
-                        <div className="Member_Image">
-                            <div className="Premium_Member">
-                                <p>Premium Member</p>
-                            
+
+                    <div className="Member_Profile">
+                        <div className="Member">
+                            <div className="Member_Image">
+                                <div className="Premium_Member">
+                                    <p>Premium Member</p>
+
+                                </div>
+                                <Badge
+                                    overlap="circle"
+                                    anchorOrigin={{
+                                        vertical: 'bottom',
+                                        horizontal: 'right',
+                                    }}
+                                    badgeContent={<FavoriteBorderIcon style={{ color: "red", backgroundColor: "whitesmoke" }} />}
+                                >
+                                    <Avatar src={data.image_path} style={{ width: "150px", height: "150px", }} />
+                                    {/*  <img src={data.image_path} width="130px" height="130px"alt="" /> */}
+                                </Badge>
                             </div>
-                        <Badge
-                        overlap="circle"
-                        anchorOrigin={{
-                            vertical: 'bottom',
-                            horizontal: 'right',
-                        }}
-                        badgeContent={<FavoriteBorderIcon style={{ color: "red" , backgroundColor:"whitesmoke" }}/> }
-                      >
-                        <Avatar src={data.image_path} style={{ width: "150px", height: "150px",}} />
-                           {/*  <img src={data.image_path} width="130px" height="130px"alt="" /> */}
-                        </Badge>
-                        </div>
-            
-                        <div className="member_info">
-                            <p className="member_name" style={{fontSize:"large",fontWeight:"bold"}}>{data.member_Fname} {data.member_lname}</p>
-                           
-                            <p className="">member Id : {data.memberId}</p>
-                            <table>
-                                <tr>
-                                    <th>Age   </th>
-                                    <th>{data.Age}</th>
-                                </tr>
-                                <tr>
-                                    <th>Gender   </th>
-                                    <th>{data.Gender}</th>
-                                </tr>
-                                <tr>
-                                    <th>Height  </th>
-                                    <th>{data.height}</th>
-                                </tr>
-                                <tr>
-                                    <th>Maritial Status  </th>
-                                    <th>{data.Marital_Status}</th>
-                                </tr>
-                                <tr>
-                                    <th>Occupation  </th>
-                                    <th>{data.Occupation}</th>
-                                </tr>
+                            
+                            <div className="member_info">
+                                <p className="member_name" style={{ fontSize: "large", fontWeight: "bold" }}>{data.member_Fname} {data.member_lname}</p>
 
-                            </table>
-            
+                                <p className="">member Id : {data.memberId}</p>
+                                <table>
+                                    <tr>
+                                        <th>Age   </th>
+                                        <th>{data.Age}</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Gender   </th>
+                                        <th>{data.Gender}</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Height  </th>
+                                        <th>{data.height}</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Maritial Status  </th>
+                                        <th>{data.Marital_Status}</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Occupation  </th>
+                                        <th>{data.Occupation}</th>
+                                    </tr>
+
+                                </table>
+
+
+                            </div>
 
                         </div>
-                    
-                    </div>
-                    <div className="member_full_profile">
-                           <Link className="full_Profile_view" to=""> View member Profile</Link>
+                        <div className="member_full_profile">
+                            <Link className="full_Profile_view" to=""> View member Profile</Link>
+
+                        </div>
 
                     </div>
-                    
-                 </div>
                 )
             })}
         </div>

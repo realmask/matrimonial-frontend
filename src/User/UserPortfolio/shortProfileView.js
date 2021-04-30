@@ -1,5 +1,6 @@
 import React from 'react'
-import { Avatar, Link, Badge } from '@material-ui/core';
+import { Avatar,  Badge } from '@material-ui/core';
+import {NavLink} from 'react-router-dom'
 import './shortProfileview.css'
 import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -27,17 +28,21 @@ function shortProfileView() {
                     <div className="profile_actions">
                         <p className="User_name" >Yash Purohit</p>
                         
-                        <Link className="full_Profile_view" to="#">View Profile</Link>
+                        <NavLink className="full_Profile_view" to="#">View Profile</NavLink>
                     </div>
 
                 </div>
-                <div className="">
-                    {/* <button >Edit Profile Picture</button> */}
+                
+                <div className="membershipPlan">
+                            <p> Be a Premium Member ? </p>
+                               <button><NavLink to='/plans' >get the plans </NavLink> </button>
 
-                </div>
+                            </div>
+
+        
                 <div className="User_information">
                     <div className="some_info">
-                        <AccountCircleRoundedIcon style={{ fontSize: "medium", color: "brown " , margin:"0 8px 0 0px" }} /><p> <strong>Identity no. </strong>  3258496 </p>
+                        <AccountCircleRoundedIcon style={{ fontSize: "medium", color: "brown " , margin:"0 8px 0 0px" }} /><p> <strong>My ID  </strong>  3258496 </p>
                     </div>
 
                     <div className="some_info">

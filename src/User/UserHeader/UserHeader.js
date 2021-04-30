@@ -7,34 +7,35 @@ import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
 import DropDown from './DropDown';
 
 function UserHeader() {
-    const [DropdownMenu, SetDropDown] = useState(false);
+   /*  const [DropdownMenu, SetDropDown] = useState(false); */
     return (
         <div className="Userheader">
             <div className="UserheaderOptions">
                 <div className="HeaderLogo">
-                    <img src="./logo1.png" alt="logo"></img>
+                    <img src="./logo.png" alt="logo"></img>
                 </div>
                 <div className="header_left">
-                    <Button><NotificationsNoneRoundedIcon style={{ fill: 'rgb(31, 41, 73)' }} /></Button>
+                    <Button><NotificationsNoneRoundedIcon style={{ fill: 'white' }} /></Button>
                     <div className="Search_box">
                         <button><SearchIcon style={{ fill: 'rgba(33, 40, 61, 0.981)', borderRadius: '8px' }} /></button>
                         <input type="text" name="SearchBox" placeholder="Search" />
                     </div>
-                    <Avatar src="./profile/yash.jpg" style={{ border: "1px solid pink" }} />
+                    <Avatar src="./profile/yash.jpg" style={{ border: "1px solid white" }} />
 
-                    <div className="dropDown" style={{ display: "flex", flexDirection:"column",justifyContent:"end" }}>
+                    <div className="dropDown" /* style={{ display: "flex", flexDirection:"column",justifyContent:"end" }} */>
                        
-                        <ArrowDropDownRoundedIcon onClick={() => SetDropDown(true)} />
+                       {/*  <ArrowDropDownRoundedIcon onClick={() => SetDropDown(true)} /> */}
+                       <DropDown />
                     </div>
 
                 </div>
             </div>
-            {DropdownMenu ?
+           {/*  {DropdownMenu ?
                         <div className="dropDown_elements"onClick={() => SetDropDown(false)}>
                             <DropDown />
                         </div>
                         : ""
-                    } 
+                    }  */}
         </div>
 
 
